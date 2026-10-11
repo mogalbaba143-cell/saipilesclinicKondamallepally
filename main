@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>సాయి అర్షమొలల దవాఖాన – Sai Piles Clinic</title>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── RESET & ROOT ── */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1B6B3A;--green2:#2E8B57;--green3:#52B788;--green-light:#E8F5EE;
+  --saffron:#E07B00;--saffron-light:#FFF4E0;
+  --red:#C0392B;--red-light:#FDECEA;
+  --dark:#0D1F14;--text:#1C2B20;--muted:#5A7265;
+  --white:#fff;--border:#C8DFD2;--bg:#F4FAF6;--cream:#FDFAF5;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Hind Madurai',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden;width:100%;max-width:100vw}
+
+
+/* ── LANG BAR ── */
+.lang-bar{background:var(--dark);padding:8px 4%;display:flex;justify-content:space-between;align-items:center;flex-wrap:nowrap;gap:8px;min-height:40px}
+.lang-info{font-size:11px;color:rgba(255,255,255,0.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+.lang-toggle{display:flex;align-items:center;gap:4px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:30px;padding:3px 5px;flex-shrink:0}
+.lang-btn{padding:5px 14px;border-radius:24px;font-size:12px;font-weight:700;border:none;cursor:pointer;transition:all .25s;font-family:'Hind Madurai',sans-serif;letter-spacing:.5px;white-space:nowrap}
+.lang-btn.active{background:var(--green3);color:white;box-shadow:0 2px 8px rgba(82,183,136,0.4)}
+.lang-btn:not(.active){background:transparent;color:rgba(255,255,255,0.55)}
+.lang-btn:not(.active):hover{color:white}
+
+
+/* ── TOPBAR ── */
+.topbar{background:var(--green);padding:8px 4%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.topbar-item{font-size:12px;color:rgba(255,255,255,0.9);display:flex;align-items:center;gap:5px}
+.topbar-item strong{color:#FFD700}
+
+
+/* ── NAV ── */
+nav{background:var(--white);border-bottom:3px solid var(--green3);padding:0 4%;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(27,107,58,0.1)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:10px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:1;min-width:0;flex:1}
+.logo-icon{width:38px;height:38px;background:linear-gradient(135deg,var(--green),var(--green2));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 4px 14px rgba(27,107,58,0.3);flex-shrink:0}
+.logo-text{overflow:hidden;min-width:0}
+.logo-text .main{font-family:'Tiro Telugu',serif;font-size:14px;font-weight:700;color:var(--green);display:block;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo-text .sub{font-size:9px;color:var(--muted);letter-spacing:.4px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+.nav-links{display:flex;gap:14px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-size:13px;font-weight:500;color:var(--text);transition:color .2s;border-bottom:2px solid transparent;padding:3px 0;white-space:nowrap}
+.nav-links a:hover{color:var(--green);border-color:var(--green)}
+.btn-hp{background:var(--saffron);color:white;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700;text-decoration:none;transition:all .25s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0}
+.btn-hp:hover{background:#C96E00;transform:translateY(-2px);box-shadow:0 8px 24px rgba(224,123,0,.5)}
+
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--dark) 0%,#1B4332 60%,#2D6A4F 100%);display:flex;align-items:center;position:relative;overflow:hidden;padding:40px 0}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2352B788' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-inner{padding:30px 4%;position:relative;z-index:2;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,215,0,.12);border:1px solid rgba(255,215,0,.3);color:#FFD700;padding:6px 14px;border-radius:30px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;max-width:100%}
+.hero h1{font-family:'Tiro Telugu',serif;font-size:clamp(24px,6vw,52px);color:white;line-height:1.3;margin-bottom:12px}
+.hero h1 span{color:var(--green3)}
+.hero-tagline{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:20px;line-height:1.7;max-width:640px}
+.hero-problems{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.prob-tag{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);padding:5px 12px;border-radius:20px;font-size:12px;flex-shrink:0}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
+.btn-ho{background:transparent;color:white;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,.35);transition:all .25s;white-space:nowrap;flex-shrink:0}
+.btn-ho:hover{border-color:white;background:rgba(255,255,255,.08)}
+.hero-stats{display:flex;gap:24px;flex-wrap:wrap}
+.stat-num{font-family:'Tiro Telugu',serif;font-size:28px;font-weight:700;color:var(--green3);line-height:1}
+.stat-lbl{font-size:11px;color:rgba(255,255,255,.45);margin-top:3px}
+
+
+/* ── MARQUEE ── */
+.marquee-bar{background:var(--saffron);padding:10px 0;overflow:hidden}
+.mtrack{display:flex;gap:40px;animation:mscroll 25s linear infinite;white-space:nowrap}
+@keyframes mscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.mitem{font-size:12px;font-weight:700;color:white;letter-spacing:.6px;text-transform:uppercase;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.mdot{color:#FFE066;font-size:14px}
+
+
+/* ── SECTIONS ── */
+section{padding:60px 4%}
+.stag{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.stitle{font-family:'Tiro Telugu',serif;font-size:clamp(21px,5vw,36px);color:var(--dark);line-height:1.3;margin-bottom:10px}
+.ssub{font-size:14px;color:var(--muted);line-height:1.7;max-width:560px}
+
+
+/* ── TREATMENTS ── */
+.treatments{background:var(--white)}
+.treat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.treat-card{border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);transition:transform .3s,box-shadow .3s;width:100%}
+.treat-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.12)}
+.tc-header{padding:18px 16px 14px;overflow:hidden}
+.tc-header.green{background:linear-gradient(135deg,#1B6B3A,#2E8B57)}
+.tc-header.red{background:linear-gradient(135deg,#922B21,#C0392B)}
+.tc-header.blue{background:linear-gradient(135deg,#1A5276,#2471A3)}
+.tc-illustration{width:100%;height:110px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.tc-illustration img{max-width:100%;max-height:110px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));border-radius:8px}
+.tc-name-en{font-size:19px;font-weight:800;color:white;letter-spacing:1px}
+.tc-name-te{font-family:'Tiro Telugu',serif;font-size:13px;color:rgba(255,255,255,.8);margin-top:3px}
+.tc-body{background:white;padding:16px}
+.tc-meaning{display:inline-block;background:var(--saffron-light);color:var(--saffron);padding:4px 11px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:10px;border:1px solid rgba(224,123,0,.2)}
+.tc-symptoms{list-style:none;display:flex;flex-direction:column;gap:7px}
+.tc-symptoms li{display:flex;align-items:flex-start;gap:7px;font-size:13px;color:var(--text);line-height:1.5}
+.sdot{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;margin-top:1px}
+.sdot.g{background:var(--green-light);color:var(--green)}
+.sdot.r{background:var(--red-light);color:var(--red)}
+.sdot.b{background:#EAF2FB;color:#2471A3}
+
+
+/* ── SPECIALITY ── */
+.speciality{background:var(--bg)}
+.spec-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:40px}
+.spec-list{display:flex;flex-direction:column;gap:14px}
+.spec-item{display:flex;gap:12px;background:white;padding:14px;border-radius:14px;border:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.04);transition:all .2s;align-items:flex-start}
+.spec-item:hover{border-color:var(--green3);transform:translateX(4px)}
+.spec-icon{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.spec-icon.g{background:var(--green-light)}.spec-icon.s{background:var(--saffron-light)}.spec-icon.r{background:var(--red-light)}
+.spec-text{flex:1;min-width:0}
+.spec-text strong{display:block;font-size:14px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.spec-text p{font-size:13px;color:var(--muted);line-height:1.6}
+.spec-visual{background:linear-gradient(135deg,var(--green),var(--dark));border-radius:22px;padding:28px 20px;color:white;text-align:center;box-shadow:0 16px 48px rgba(27,107,58,.3)}
+.sv-emoji{font-size:48px;margin-bottom:12px;display:block;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.sv-title{font-family:'Tiro Telugu',serif;font-size:19px;margin-bottom:12px}
+.sv-points{list-style:none;display:flex;flex-direction:column;gap:8px;text-align:left}
+.sv-points li{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.85)}
+.sv-points li::before{content:'✓';width:20px;height:20px;min-width:20px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.sv-tag{margin-top:16px;display:inline-block;background:rgba(255,215,0,.15);border:1px solid rgba(255,215,0,.4);color:#FFD700;padding:6px 16px;border-radius:24px;font-size:12px;font-weight:700}
+
+
+/* ── WHY ── */
+.why{background:var(--dark);padding:60px 4%;text-align:center}
+.why .stitle{color:white}.why .stag{color:var(--green3)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.why-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px 14px;text-align:center;transition:all .3s}
+.why-card:hover{background:rgba(82,183,136,.12);border-color:var(--green3);transform:translateY(-4px)}
+.wc-icon{font-size:30px;margin-bottom:10px;display:block}
+.wc-title{font-family:'Tiro Telugu',serif;font-size:14px;color:white;margin-bottom:6px}
+.wc-desc{font-size:12px;color:rgba(255,255,255,.52);line-height:1.6}
+
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--cream);padding:60px 4%}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.tcard{background:white;border-radius:16px;padding:18px;box-shadow:0 4px 20px rgba(0,0,0,.06);border:1px solid var(--border)}
+.tcard-stars{color:#F39C12;font-size:14px;margin-bottom:8px}
+.tcard-text{font-size:13px;color:var(--text);line-height:1.6;margin-bottom:12px;font-style:italic}
+.tcard-name{font-weight:700;font-size:13px;color:var(--green)}
+.tcard-loc{font-size:11px;color:var(--muted)}
+
+
+/* ── CONTACT ── */
+.contact-sec{background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;padding:60px 4%}
+.cc-card{display:flex;gap:12px;padding:14px;background:var(--bg);border-radius:13px;margin-bottom:10px;border:1px solid var(--border);transition:all .2s;align-items:flex-start}
+.cc-card:hover{border-color:var(--green3);transform:translateX(4px)}
+.cc-ic{width:44px;height:44px;background:var(--green-light);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
+.cc-info{flex:1;min-width:0}
+.cc-info strong{display:block;font-size:13px;font-weight:700;color:var(--dark);margin-bottom:3px}
+.cc-info span,.cc-info a{font-size:12px;color:var(--muted);text-decoration:none;display:block;line-height:1.6}
+.cc-info a:hover{color:var(--green)}
+.map-box{border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.1);border:3px solid var(--green-light)}
+.map-box iframe{width:100%;height:280px;border:none;display:block}
+.whatsapp-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:white;padding:12px 20px;border-radius:11px;font-size:14px;font-weight:700;text-decoration:none;transition:all .25s;margin-top:10px}
+.whatsapp-btn:hover{background:#1ebe5d;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4)}
+
+
+/* ── FOOTER ── */
+footer{background:var(--dark);padding:28px 4%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.footer-brand .main{font-family:'Tiro Telugu',serif;font-size:15px;color:white}
+.footer-brand .sub{font-size:10px;color:rgba(255,255,255,.38);letter-spacing:.8px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.32);text-align:center}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.footer-links a{font-size:11px;color:rgba(255,255,255,.42);text-decoration:none}
+.footer-links a:hover{color:white}
+
+
+/* ── SCROLL BTN ── */
+.scroll-top{position:fixed;bottom:20px;right:14px;width:40px;height:40px;background:var(--green);color:white;border:none;border-radius:50%;font-size:18px;cursor:pointer;box-shadow:0 4px 14px rgba(27,107,58,.4);opacity:0;transition:opacity .3s;z-index:99;display:flex;align-items:center;justify-content:center}
+.scroll-top.visible{opacity:1}
+
+
+/* ── POPUP ── */
+.popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;z-index:999;padding:14px}
+.popup-box{background:white;padding:24px 20px;border-radius:15px;width:100%;max-width:420px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3);max-height:92vh;overflow-y:auto}
+.popup-box h2{font-family:'Tiro Telugu',serif;color:var(--green);margin-bottom:4px;font-size:19px}
+.popup-box p.popup-sub{font-size:12px;color:var(--muted);margin-bottom:4px;line-height:1.5}
+.popup-box input,.popup-box select,.popup-box textarea{width:100%;padding:10px 12px;margin-top:8px;border:1.5px solid var(--border);border-radius:8px;font-family:'Hind Madurai',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color .2s}
+.popup-box input:focus,.popup-box select:focus,.popup-box textarea:focus{border-color:var(--green3)}
+.btn-submit-form{width:100%;margin-top:14px;padding:12px;background:var(--green);color:white;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Hind Madurai',sans-serif;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-submit-form:hover{background:var(--green2)}
+.btn-submit-form:disabled{opacity:.6;cursor:not-allowed}
+.close-btn{position:absolute;top:10px;right:14px;font-size:24px;cursor:pointer;color:var(--muted);line-height:1;background:none;border:none;z-index:10;padding:4px 8px}
+.close-btn:hover{color:var(--dark)}
+#successMsg{margin-top:10px;font-size:13px;font-weight:600;text-align:center;padding:8px;border-radius:8px;display:none}
+#successMsg.ok{color:#1B6B3A;background:#E8F5EE;border:1px solid var(--green3);display:block}
+#successMsg.dup{color:#E07B00;background:#FFF4E0;border:1px solid rgba(224,123,0,.3);display:block}
+#successMsg.err{color:#C0392B;background:#FDECEA;border:1px solid rgba(192,57,43,.3);display:block}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.4);border-top-color:white;border-radius:50%;animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+
+/* ── INFO PANEL ── */
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:998}
+.info-panel{position:fixed;top:0;right:0;width:min(480px,100vw);height:100vh;background:var(--white);z-index:999;overflow-y:auto;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:-8px 0 40px rgba(0,0,0,.18);display:none}
+.info-panel.open{transform:translateX(0)}
+.info-panel-head{background:linear-gradient(135deg,var(--green),var(--dark));padding:20px 18px 16px;position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.info-panel-head h3{font-family:'Tiro Telugu',serif;font-size:17px;color:white;flex:1;min-width:0;line-height:1.4}
+.info-close{background:rgba(255,255,255,.15);border:none;color:white;width:32px;height:32px;min-width:32px;border-radius:50%;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.info-close:hover{background:rgba(255,255,255,.25)}
+.info-tabs{display:flex;border-bottom:2px solid var(--border);background:var(--bg);position:sticky;top:74px;z-index:2}
+.itab{flex:1;padding:10px 4px;text-align:center;font-size:12px;font-weight:700;cursor:pointer;border:none;background:transparent;transition:all .2s;font-family:'Hind Madurai',sans-serif;color:var(--muted);white-space:nowrap}
+.itab.active{color:var(--green);border-bottom:3px solid var(--green);margin-bottom:-2px;background:white}
+.info-content{padding:16px}
+.idisease{display:none}
+.idisease.active{display:block}
+.idisease-title{font-family:'Tiro Telugu',serif;font-size:16px;color:var(--dark);margin-bottom:5px}
+.idisease-sub{font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.6}
+.idisease-svg{width:100%;height:130px;border-radius:13px;background:var(--bg);display:flex;align-items:center;justify-content:center;margin-bottom:14px;border:1px solid var(--border);overflow:hidden}
+.idisease-svg img{max-width:100%;max-height:130px;width:auto;height:auto;object-fit:contain}
+.info-section{margin-bottom:14px}
+.info-section h4{font-size:12px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.info-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.info-list li{font-size:13px;color:var(--text);line-height:1.5;padding-left:16px;position:relative}
+.info-list li::before{content:'•';position:absolute;left:0;color:var(--green3);font-weight:700}
+.info-cause-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.cause-item{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--text);line-height:1.5}
+.cause-item span{display:block;font-size:15px;margin-bottom:3px}
+.info-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:white;padding:12px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;margin-top:16px;transition:all .2s}
+.info-cta:hover{background:#1ebe5d;transform:translateY(-2px)}
+
+
+/* ══════════════════════════════════════
+   MOBILE RESPONSIVE - ALL BREAKPOINTS
+   ══════════════════════════════════════ */
+
+
+/* Tablet – ≤900px */
+@media(max-width:900px){
+  .treat-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-grid{grid-template-columns:1fr 1fr}
+}
+
+
+/* Mobile – ≤768px */
+@media(max-width:768px){
+
+
+  /* Lang Bar */
+  .lang-bar{padding:7px 4%}
+  .lang-info{font-size:10px}
+
+
+  /* Topbar – stack into 2 rows */
+  .topbar{padding:8px 4%;flex-direction:column;align-items:flex-start;gap:5px}
+  .topbar-item{font-size:11px}
+
+
+  /* Nav */
+  nav{padding:0 4%}
+  .nav-inner{height:58px;gap:8px}
+  .logo-text .main{font-size:13px}
+  .logo-text .sub{display:none}
+  .nav-links{display:none}
+  .btn-hp{padding:9px 13px;font-size:12px;gap:4px}
+
+
+  /* Hero */
+  .hero{padding:30px 0}
+  .hero-inner{padding:24px 4%}
+  .hero-badge{font-size:10px;padding:5px 12px;margin-bottom:14px}
+  .hero h1{font-size:clamp(22px,7vw,36px)}
+  .hero-tagline{font-size:13px;margin-bottom:18px}
+  .hero-problems{gap:6px;margin-bottom:18px}
+  .prob-tag{font-size:11px;padding:4px 10px}
+  .hero-btns{flex-direction:column;align-items:stretch;gap:10px;margin-bottom:24px}
+  .hero-btns .btn-hp,.hero-btns .btn-ho{width:100%;justify-content:center;text-align:center;padding:13px 16px;font-size:14px}
+  .hero-stats{gap:18px}
+  .stat-num{font-size:24px}
+  .stat-lbl{font-size:10px}
+
+
+  /* Treatments */
+  section{padding:44px 4%}
+  .treat-grid{grid-template-columns:1fr;gap:20px}
+  .treat-card{max-width:100%}
+  .tc-illustration{height:100px}
+  .tc-illustration img{max-height:100px}
+  .tc-name-en{font-size:18px}
+
+
+  /* Speciality */
+  .spec-wrap{grid-template-columns:1fr;gap:24px}
+  .spec-item{padding:13px}
+  .spec-icon{width:40px;height:40px;font-size:18px}
+  .spec-text strong{font-size:13px}
+  .spec-text p{font-size:12px}
+  .spec-visual{padding:24px 18px}
+  .sv-emoji{font-size:42px}
+  .sv-title{font-size:17px}
+  .sv-points li{font-size:12px}
+
+
+  /* Why */
+  .why{padding:44px 4%}
+  .why-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .why-card{padding:16px 12px}
+  .wc-icon{font-size:26px;margin-bottom:8px}
+  .wc-title{font-size:13px}
+  .wc-desc{font-size:11px}
+
+
+  /* Testimonials */
+  .testimonials{padding:44px 4%}
+  .testi-grid{grid-template-columns:1fr;gap:14px}
+
+
+  /* Contact */
+  .contact-sec{grid-template-columns:1fr;gap:24px;padding:44px 4%}
+  .cc-card{padding:12px}
+  .cc-ic{width:40px;height:40px;font-size:17px}
+  .cc-info strong{font-size:12px}
+  .cc-info span,.cc-info a{font-size:11px}
+  .map-box iframe{height:240px}
+  .whatsapp-btn{font-size:13px;padding:11px 16px}
+
+
+  /* Footer */
+  footer{padding:22px 4%;flex-direction:column;align-items:flex-start;gap:12px}
+  .footer-links{justify-content:flex-start;gap:12px}
+  .footer-copy{order:3;width:100%}
+
+
+  /* Scroll Top btn */
+  .scroll-top{bottom:14px;right:12px;width:38px;height:38px;font-size:16px}
+
+
+  /* Popup */
+  .popup{padding:10px}
+  .popup-box{padding:20px 16px;max-height:95vh}
+  .popup-box h2{font-size:17px}
+
+
+  /* Info panel */
+  .info-panel{width:100vw}
+  .info-tabs .itab{font-size:11px;padding:9px 3px}
+  .cause-item{font-size:11px}
+}
+
+
+/* Small Mobile – ≤480px */
+@media(max-width:480px){
+
+
+  /* Lang bar */
+  .lang-info{display:none}
+  .lang-toggle{margin-left:auto}
+
+
+  /* Topbar */
+  .topbar-item:last-child{display:none}
+
+
+  /* Nav */
+  .logo-icon{width:34px;height:34px;font-size:15px}
+  .logo-text .main{font-size:12px}
+  .btn-hp{padding:8px 11px;font-size:11px;gap:3px}
+  .btn-hp span{display:none}
+  .btn-hp::before{content:'📅 Book'}
+
+
+  /* Hero */
+  .hero-inner{padding:20px 4%}
+  .hero h1{font-size:clamp(20px,8vw,30px)}
+  .hero-tagline{font-size:12px}
+  .hero-stats{gap:14px}
+  .stat-num{font-size:22px}
+
+
+  /* Why – single column on very small */
+  .why-grid{grid-template-columns:1fr 1fr}
+
+
+  /* Section headings */
+  .stitle{font-size:clamp(19px,6vw,28px)}
+  .ssub{font-size:13px}
+
+
+  /* Treatment cards */
+  .tc-symptoms li{font-size:12px}
+  .sdot{width:18px;height:18px;font-size:10px}
+
+
+  /* Spec items */
+  .spec-item{flex-direction:row;align-items:flex-start}
+
+
+  /* Footer */
+  .footer-brand .main{font-size:13px}
+  .footer-links{gap:10px}
+  .footer-links a{font-size:10px}
+}
+
+
+/* Very small – ≤360px */
+@media(max-width:360px){
+  .hero-btns .btn-hp,.hero-btns .btn-ho{font-size:13px;padding:12px}
+  .treat-card .tc-body{padding:13px}
+  .why-grid{grid-template-columns:1fr}
+  .hero-stats{flex-wrap:wrap;gap:12px}
+  .hero-badge{font-size:9px;padding:4px 10px}
+}
+</style>
+</head>
+<body>
+
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <span class="lang-info" id="langInfo">🌐 భాష మార్చండి / Change Language</span>
+  <div class="lang-toggle">
+    <button class="lang-btn active" id="btnTe" onclick="setLang('te')">తెలుగు</button>
+    <button class="lang-btn" id="btnEn" onclick="setLang('en')">English</button>
+  </div>
+</div>
+
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-item">📞 <strong>7981093680</strong> <span data-te="అత్యవసర సమాచారానికి కాల్ చేయండి" data-en="Call for Emergency Info"></span></div>
+  <div class="topbar-item">📍 <span data-te="కొండమల్లేపల్లి, సాగర్ రోడ్, నల్గొండ జిల్లా-508243" data-en="Kondamallepally, Sagar Road, Nalgonda District-508243"></span></div>
+  <div class="topbar-item">🕐 <span data-te="సోమ–ఆది: ఉ.9 – సా.9" data-en="Mon-Sun: 9AM – 9PM"></span></div>
+</div>
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon">🌿</div>
+      <div class="logo-text">
+        <span class="main" data-te="సాయి అర్షమొలల దవాఖాన" data-en="Sai Piles Clinic"></span>
+        <span class="sub" data-te="కొండమల్లేపల్లి,నల్గొండ జిల్లా • ఆయుర్వేదిక్ చికిత్స" data-en="Kondamallepally, Nalgonda • Ayurvedic Treatment"></span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#treatments" data-te="చికిత్సలు" data-en="Treatments"></a></li>
+      <li><a href="javascript:void(0)" onclick="openInfoPanel(0)" data-te="వ్యాధి సమాచారం" data-en="Disease Info"></a></li>
+      <li><a href="#speciality" data-te="మా ప్రత్యేకత" data-en="Our Specialty"></a></li>
+      <li><a href="#why" data-te="ఎందుకు మేమే?" data-en="Why Us?"></a></li>
+      <li><a href="#contact" data-te="సంప్రదించండి" data-en="Contact"></a></li>
+    </ul>
+<button class="btn-hp" onclick="openAppointment()">
+  📅 <span data-te="అపాయింట్మెంట్" data-en="Book Appointment"></span>
+</button>  </div>
+</nav>
+
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge" data-te="🌿 100% ఆయుర్వేదిక్ • సురక్షితమైన చికిత్స" data-en="🌿 100% Ayurvedic • Safe Treatment"></div>
+    <h1 data-te="అర్షమొలలు, ఫిషర్,<br>ఫిస్టులాకు <span>శాశ్వత పరిష్కారం</span>" data-en="Permanent Solution for<br>Piles, Fissure &amp; <span>Fistula</span>"></h1>
+    <p class="hero-tagline" data-te="ఆపరేషన్ అవసరం లేకుండా – క్షరసూత్ర పద్ధతిలో నయం చేయబడును. కొండమల్లేపల్లి నల్గొండ జిల్లాలో నంబర్ 1 క్లినిక్." data-en="No Surgery Required – Treated with Ksharasutra Method. The #1 Clinic in Kondamallepally Nalgonda District."></p>
+    <div class="hero-problems">
+      <span class="prob-tag" data-te="🔴 మొలలు" data-en="🔴 Piles"></span>
+      <span class="prob-tag" data-te="🩸 రక్తమొలలు" data-en="🩸 Bleeding Piles"></span>
+      <span class="prob-tag" data-te="🔥 పగుళ్లు (Fissure)" data-en="🔥 Fissure"></span>
+      <span class="prob-tag" data-te="💧 ఫిస్టులా" data-en="💧 Fistula"></span>
+      <span class="prob-tag" data-te="🟡 లూటిగడాలు" data-en="🟡 Abscess"></span>
+    </div>
+    <div class="hero-btns">
+      <a href="tel:7981093680" class="btn-hp" data-te="📞 ఇప్పుడే కాల్ చేయండి" data-en="📞 Call Now"></a>
+      <a href="#treatments" class="btn-ho" data-te="మా చికిత్సలు చూడండి" data-en="View Our Treatments"></a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">500+</div><div class="stat-lbl" data-te="సంతుష్ట రోగులు" data-en="Satisfied Patients"></div></div>
+      <div><div class="stat-num">10+</div><div class="stat-lbl" data-te="సంవత్సరాల అనుభవం" data-en="Years Experience"></div></div>
+      <div><div class="stat-num">100%</div><div class="stat-lbl" data-te="సహజ చికిత్స" data-en="Natural Treatment"></div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="mtrack">
+    <span class="mitem"><span class="mdot">✦</span><span data-te="అర్షమొలలు" data-en="Piles Treatment"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="Fissure చికిత్స" data-en="Fissure Treatment"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="Fistula నయం" data-en="Fistula Cure"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="రక్తమొలలు" data-en="Bleeding Piles"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="భగందరాలు" data-en="Bhagandara"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="క్షరసూత్ర పద్ధతి" data-en="Ksharasutra Method"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="ఆపరేషన్ లేకుండా నయం" data-en="No Surgery Required"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="అర్షమొలలు" data-en="Piles Treatment"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="Fissure చికిత్స" data-en="Fissure Treatment"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="Fistula నయం" data-en="Fistula Cure"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="భగందరాలు" data-en="Bhagandara"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="క్షరసూత్ర పద్ధతి" data-en="Ksharasutra Method"></span></span>
+    <span class="mitem"><span class="mdot">✦</span><span data-te="ఆపరేషన్ లేకుండా నయం" data-en="No Surgery Required"></span></span>
+  </div>
+</div>
+
+
+<!-- TREATMENTS -->
+<section class="treatments" id="treatments">
+  <div style="text-align:center">
+    <div class="stag" data-te="మా ప్రత్యేక చికిత్సలు" data-en="OUR SPECIALISED TREATMENTS"></div>
+    <h2 class="stitle" data-te="మూడు ముఖ్యమైన సమస్యలకు పరిష్కారం" data-en="Solutions for 3 Major Problems"></h2>
+    <p class="ssub" style="margin:0 auto;text-align:center" data-te="ఆయుర్వేదిక్ క్షరసూత్ర పద్ధతిలో ఆపరేషన్ అవసరం లేకుండా శాశ్వతంగా నయం చేయబడును" data-en="Permanently cured using the Ayurvedic Ksharasutra method without any surgery"></p>
+  </div>
+  <div class="treat-grid">
+
+
+    <!-- PILES -->
+    <div class="treat-card">
+      <div class="tc-header green">
+        <div class="tc-illustration">
+          <img src="piles.jpg" alt="Piles Illustration" onerror="this.src='';this.onerror=null;">
+        </div>
+        <div class="tc-name-en">PILES</div>
+        <div class="tc-name-te" data-te="అర్షమొలలు / రక్తమొలలు" data-en="Haemorrhoids / Bleeding Piles"></div>
+      </div>
+      <div class="tc-body">
+        <span class="tc-meaning" data-te="మలద్వారంలో వాపు & నొప్పి" data-en="Swelling & Pain near Anus"></span>
+        <ul class="tc-symptoms">
+          <li><span class="sdot g">🩸</span><span data-te="మలవిసర్జన సమయంలో రక్తస్రావం" data-en="Bleeding during bowel movement"></span></li>
+          <li><span class="sdot g">😣</span><span data-te="మలద్వారంలో నొప్పి & మంట" data-en="Pain & burning near anus"></span></li>
+          <li><span class="sdot g">🪑</span><span data-te="కూర్చోవడంలో ఇబ్బంది" data-en="Discomfort while sitting"></span></li>
+          <li><span class="sdot g">🔴</span><span data-te="మలద్వారం వెలుపల వాపు కనిపించడం" data-en="Visible swelling outside the anus"></span></li>
+          <li><span class="sdot g">😰</span><span data-te="మలవిసర్జన సమయంలో కష్టం" data-en="Difficulty during bowel movement"></span></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- FISSURE -->
+    <div class="treat-card">
+      <div class="tc-header red">
+        <div class="tc-illustration">
+          <img src="annlfissure.png" alt="Fissure Illustration" onerror="this.src='';this.onerror=null;">
+        </div>
+        <div class="tc-name-en">FISSURE</div>
+        <div class="tc-name-te" data-te="పగుళ్లు / చీలిక" data-en="Anal Crack / Tear"></div>
+      </div>
+      <div class="tc-body">
+        <span class="tc-meaning" style="background:#fdecea;color:#c0392b;border-color:rgba(192,57,43,.2)" data-te="మలద్వారంలో పగుళ్లు" data-en="Cracks in Anal Area"></span>
+        <ul class="tc-symptoms">
+          <li><span class="sdot r">🔥</span><span data-te="మలవిసర్జన సమయంలో తీవ్రమైన మంట" data-en="Severe burning during bowel movement"></span></li>
+          <li><span class="sdot r">🩸</span><span data-te="రక్తస్రావం – ఎర్రని రక్తం కనిపించడం" data-en="Bright red blood visible"></span></li>
+          <li><span class="sdot r">😫</span><span data-te="కష్టంగా మలవిసర్జన జరగడం" data-en="Difficulty passing stools"></span></li>
+          <li><span class="sdot r">⚡</span><span data-te="మలవిసర్జన తర్వాత కూడా నొప్పి ఉండడం" data-en="Pain persisting after bowel movement"></span></li>
+          <li><span class="sdot r">😰</span><span data-te="మలవిసర్జనకు భయం కలగడం" data-en="Fear of going to the toilet"></span></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- FISTULA -->
+    <div class="treat-card">
+      <div class="tc-header blue">
+        <div class="tc-illustration">
+          <img src="FISTULA.jpeg" alt="Fistula Illustration" onerror="this.src='';this.onerror=null;">
+        </div>
+        <div class="tc-name-en">FISTULA</div>
+        <div class="tc-name-te" data-te="ఫిస్టులా / భగందరం" data-en="Anal Fistula / Bhagandara"></div>
+      </div>
+      <div class="tc-body">
+        <span class="tc-meaning" style="background:#EAF2FB;color:#2471A3;border-color:rgba(36,113,163,.2)" data-te="ఆసనము ప్రక్కన రంధ్రం" data-en="Tunnel near the Anus"></span>
+        <ul class="tc-symptoms">
+          <li><span class="sdot b">🔵</span><span data-te="ఆసనము ప్రక్కన 2–3 అంగుళాల దూరంలో గడ్డ పుట్టడం" data-en="Lump forming 2–3 inches from anus"></span></li>
+          <li><span class="sdot b">💧</span><span data-te="గడ్డ పగిలి రంధ్రముగా మారి చీము కారడం" data-en="Lump bursts and pus continuously drains"></span></li>
+          <li><span class="sdot b">😣</span><span data-te="నిరంతరం నొప్పి & అసౌకర్యం" data-en="Constant pain & discomfort"></span></li>
+          <li><span class="sdot b">🤢</span><span data-te="దుర్వాసన వస్తున్న స్రావం" data-en="Foul-smelling discharge"></span></li>
+          <li><span class="sdot b">🔄</span><span data-te="మళ్ళీ మళ్ళీ పుట్టడం (Recurrent)" data-en="Recurring again and again"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SPECIALITY -->
+<section class="speciality" id="speciality">
+  <div style="text-align:center">
+    <div class="stag" data-te="మా ప్రత్యేకత" data-en="OUR SPECIALTY"></div>
+    <h2 class="stitle" data-te="ఆయుర్వేదిక్ క్షరసూత్ర పద్ధతి" data-en="Ayurvedic Ksharasutra Method"></h2>
+    <p class="ssub" style="margin:0 auto;text-align:center" data-te="2000 సంవత్సరాల పాతదైన ఆయుర్వేదిక్ సంప్రదాయంలో నిరూపితమైన చికిత్స" data-en="A proven treatment rooted in 2000-year-old Ayurvedic tradition"></p>
+  </div>
+  <div class="spec-wrap">
+    <div class="spec-list">
+      <div class="spec-item"><div class="spec-icon g">🌿</div><div class="spec-text"><strong data-te="100% సహజమైన చికిత్స" data-en="100% Natural Treatment"></strong><p data-te="ఆయుర్వేదిక్ మూలికలతో తయారుచేసిన క్షరసూత్రం వాడి చికిత్స చేయబడును. ఎలాంటి రసాయనాలు వాడరు." data-en="Treatment using Ksharasutra prepared from Ayurvedic herbs. No harmful chemicals used."></p></div></div>
+      <div class="spec-item"><div class="spec-icon s">🏥</div><div class="spec-text"><strong data-te="ఆపరేషన్ అవసరం లేదు" data-en="No Surgery Required"></strong><p data-te="పెద్ద ఆపరేషన్, అనస్థీషియా అవసరం లేకుండా OPD పద్ధతిలో చికిత్స. రోగి అదే రోజు ఇంటికి వెళ్ళవచ్చు." data-en="No major surgery or anaesthesia needed. Treated as OPD procedure. Patient can go home same day."></p></div></div>
+      <div class="spec-item"><div class="spec-icon r">🛡️</div><div class="spec-text"><strong data-te="శాశ్వతమైన పరిష్కారం" data-en="Permanent Solution"></strong><p data-te="సాధారణ ఆపరేషన్ తర్వాత మళ్ళీ వస్తాయి. క్షరసూత్ర పద్ధతిలో మళ్ళీ రాకుండా శాశ్వతంగా నయం అవుతుంది." data-en="Unlike conventional surgery, Ksharasutra provides permanent cure without recurrence."></p></div></div>
+      <div class="spec-item"><div class="spec-icon g">💰</div><div class="spec-text"><strong data-te="తక్కువ ఖర్చు" data-en="Affordable Cost"></strong><p data-te="హాస్పిటల్ ఖర్చుతో పోల్చితే చాలా తక్కువ ఖర్చులో సర్వోత్తమ చికిత్స అందించబడును." data-en="Get the best quality treatment at a fraction of hospital cost."></p></div></div>
+    </div>
+    <div class="spec-visual">
+      <span class="sv-emoji">🌿</span>
+      <div class="sv-title" data-te="క్షరసూత్ర పద్ధతి" data-en="Ksharasutra Method"></div>
+      <ul class="sv-points">
+        <li data-te="2000 సంవత్సరాల పురాతన ఆయుర్వేదిక్ పద్ధతి" data-en="2000-year-old ancient Ayurvedic method"></li>
+        <li data-te="భారత ప్రభుత్వం గుర్తించిన చికిత్స" data-en="Recognised by the Government of India"></li>
+        <li data-te="నొప్పి చాలా తక్కువగా ఉంటుంది" data-en="Minimal pain during treatment"></li>
+        <li data-te="రోగి అదే రోజు ఇంటికి వెళ్ళవచ్చు" data-en="Patient goes home the same day"></li>
+        <li data-te="మళ్ళీ రాకుండా శాశ్వత నివారణ" data-en="Permanent prevention of recurrence"></li>
+        <li data-te="అన్ని వయసుల వారికి సురక్షితం" data-en="Safe for all age groups"></li>
+      </ul>
+      <div class="sv-tag" data-te="✓ నిర్ధారిత ఫలితాలు" data-en="✓ Guaranteed Results"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="stag" data-te="ఎందుకు సాయి దవాఖాన?" data-en="WHY CHOOSE US?"></div>
+  <h2 class="stitle" data-te="మేము ఎందుకు వేరుగా ఉన్నాము" data-en="What Makes Us Different"></h2>
+  <div class="why-grid">
+    <div class="why-card"><span class="wc-icon">🎓</span><div class="wc-title" data-te="నిపుణుల వైద్యం" data-en="Expert Medical Care"></div><div class="wc-desc" data-te="అర్షమొలలు, ఫిషర్, ఫిస్టులాలో 10+ సంవత్సరాల అనుభవం ఉన్న నిపుణ వైద్యుడు" data-en="Specialist doctor with 10+ years experience in Piles, Fissure & Fistula"></div></div>
+    <div class="why-card"><span class="wc-icon">🌿</span><div class="wc-title" data-te="సహజ చికిత్స" data-en="Natural Treatment"></div><div class="wc-desc" data-te="ఎలాంటి రసాయనాలు, సైడ్ ఎఫెక్ట్స్ లేకుండా 100% ఆయుర్వేదిక్ క్షరసూత్ర చికిత్స" data-en="100% Ayurvedic Ksharasutra treatment with no chemicals or side effects"></div></div>
+    <div class="why-card"><span class="wc-icon">🏆</span><div class="wc-title" data-te="500+ సంతుష్ట రోగులు" data-en="500+ Satisfied Patients"></div><div class="wc-desc" data-te="నల్గొండ జిల్లా మొత్తం నుండి రోగులు వచ్చి నయం అయ్యారు" data-en="Patients from across Nalgonda district cured successfully"></div></div>
+    <div class="why-card"><span class="wc-icon">💸</span><div class="wc-title" data-te="తక్కువ ఖర్చు" data-en="Affordable Cost"></div><div class="wc-desc" data-te="హాస్పిటల్ ఖర్చులో పదవ వంతు ధరలో అదే నాణ్యమైన చికిత్స" data-en="Same quality treatment at one-tenth the cost of a hospital"></div></div>
+    <div class="why-card"><span class="wc-icon">🔒</span><div class="wc-title" data-te="గోప్యత" data-en="Full Privacy"></div><div class="wc-desc" data-te="రోగి వివరాలు పూర్తి గోప్యంగా ఉంచబడతాయి. మీ గురించి బయటకు చెప్పబడదు" data-en="Patient details kept completely confidential. Your privacy is our priority."></div></div>
+    <div class="why-card"><span class="wc-icon">📞</span><div class="wc-title" data-te="24/7 సంప్రదించవచ్చు" data-en="Always Reachable"></div><div class="wc-desc" data-te="ఫోన్ ద్వారా సలహా పొందవచ్చు. దగ్గర్లో ఉన్న వారు నేరుగా వెళ్ళవచ్చు" data-en="Get advice over phone. Nearby patients can walk in directly."></div></div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div style="text-align:center">
+    <div class="stag" data-te="రోగుల అభిప్రాయాలు" data-en="PATIENT REVIEWS"></div>
+    <h2 class="stitle" data-te="మా రోగులు చెప్పేది" data-en="What Our Patients Say"></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="tcard"><div class="tcard-stars">★★★★★</div><div class="tcard-text" data-te="&ldquo;5 సంవత్సరాల నుండి అర్షమొలల బాధతో ఉన్నాను. డాక్టర్ గారి చికిత్సతో 3 వారాల్లో పూర్తిగా నయమైంది. ఆపరేషన్ కూడా అవసరం లేకపోయింది.&rdquo;" data-en="&ldquo;I had been suffering from piles for 5 years. Completely cured in 3 weeks. No surgery needed at all.&rdquo;"></div><div class="tcard-name">రామారావు / Ramarao</div><div class="tcard-loc">📍 మిర్యాలగూడ, నల్గొండ జిల్లా</div></div>
+    <div class="tcard"><div class="tcard-stars">★★★★★</div><div class="tcard-text" data-te="&ldquo;ఫిస్టులా సమస్యకు పెద్ద హాస్పిటల్లో చాలా ఖర్చవుతుందని చెప్పారు. ఇక్కడ తక్కువ ఖర్చులో నయమైంది. చాలా సంతోషంగా ఉన్నాను.&rdquo;" data-en="&ldquo;Big hospital quoted huge amount for my fistula. Cured here at very low cost. Very happy with results.&rdquo;"></div><div class="tcard-name">లక్ష్మి దేవి / Lakshmi Devi</div><div class="tcard-loc">📍 సూర్యాపేట జిల్లా</div></div>
+    <div class="tcard"><div class="tcard-stars">★★★★★</div><div class="tcard-text" data-te="&ldquo;Fissure వల్ల మలవిసర్జనకు భయంగా ఉండేది. 2 నెలల చికిత్సలో పూర్తిగా నయమైంది. డాక్టర్ గారికి చాలా ధన్యవాదాలు.&rdquo;" data-en="&ldquo;Was afraid to use toilet because of fissure. Completely cured in 2 months. Many thanks to the doctor.&rdquo;"></div><div class="tcard-name">వెంకటేష్ / Venkatesh</div><div class="tcard-loc">📍 నల్గొండ జిల్లా</div></div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div>
+    <div class="stag" data-te="సంప్రదించండి" data-en="CONTACT US"></div>
+    <h2 class="stitle" data-te="మాకు ఎలా రావాలి?" data-en="How to Find Us"></h2>
+    <div class="cc-card"><div class="cc-ic">📍</div><div class="cc-info"><strong data-te="చిరునామా" data-en="Address"></strong><span data-te="నవ్య టీ స్టాల్ ఎదురుగా" data-en="Opposite Navya Tea Stall"></span><span data-te="శ్రీ సాయి బాలాజీ ఫెర్టిలైజర్స్ పైన" data-en="Above Sri Sai Balaji Fertilizers"></span><span data-te="సాగర్ రోడ్, కొండమల్లేపల్లి" data-en="Sagar Road, Kondamallepally"></span><span data-te="నల్గొండ జిల్లా, తెలంగాణ-508243" data-en="Nalgonda District, Telangana-508243"></span></div></div>
+    <div class="cc-card"><div class="cc-ic">📞</div><div class="cc-info"><strong data-te="ఫోన్ నంబర్" data-en="Phone Number"></strong><a href="tel:7981093680">📱 7981093680</a><span data-te="కాల్ లేదా WhatsApp చేయవచ్చు" data-en="Call or WhatsApp us anytime"></span></div></div>
+    <div class="cc-card"><div class="cc-ic">🕐</div><div class="cc-info"><strong data-te="సమయం" data-en="Working Hours"></strong><span data-te="సోమవారం – శనివారము: ఉ. 9:00 – సా. 9:00" data-en="Monday – Saturday: 9:00 AM – 9:00 PM"></span><span data-te="ఆదివారం: ఉ. 9:00 – సా. 9:00" data-en="Sunday: 9:00 AM – 9:00 PM"></span></div></div>
+    <a href="https://wa.me/917981093680?text=నమస్కారం%2C నాకు అపాయింట్మెంట్ కావాలి" class="whatsapp-btn" target="_blank">💬 <span data-te="WhatsApp లో సంప్రదించండి" data-en="Chat on WhatsApp"></span></a>
+  </div>
+  <div>
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps?q=16.714904,78.978863&z=18&output=embed" width="100%" height="280" style="border:0;" loading="lazy" title="Clinic Location"></iframe>
+      <div style="padding:12px;text-align:center;background:#f4faf6">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=16.714904,78.978863" target="_blank" style="display:inline-block;padding:8px 20px;background:#0a7cff;color:white;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px">🗺️ Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="main" data-te="సాయి అర్షమొలల దవాఖాన" data-en="Sai Arshamolala Clinic"></div>
+    <div class="sub" data-te="కొండమల్లేపల్లి • నల్గొండ జిల్లా • తెలంగాణ-508243" data-en="Kondamallepally • Nalgonda District • Telangana-508243"></div>
+  </div>
+  <div class="footer-copy" data-te="© 2025 సాయి అర్షమొలల దవాఖాన. అన్ని హక్కులూ రిజర్వ్ చేయబడ్డాయి." data-en="© 2025 Sai Arshamolala Clinic. All rights reserved."></div>
+  <div class="footer-links">
+    <a href="#treatments" data-te="చికిత్సలు" data-en="Treatments"></a>
+    <a href="#speciality" data-te="ప్రత్యేకత" data-en="Specialty"></a>
+    <a href="#contact" data-te="సంప్రదించండి" data-en="Contact"></a>
+    <a href="tel:7981093680">📞 7981093680</a>
+  </div>
+</footer>
+
+
+<button class="scroll-top" id="scrollBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+
+<!-- APPOINTMENT POPUP -->
+<div id="appointmentPopup" class="popup">
+  <div class="popup-box">
+
+
+    <button class="close-btn" onclick="closeAppointment()">×</button>
+
+
+    <h2 data-te="అపాయింట్మెంట్ బుక్ చేయండి" data-en="Book Appointment">
+      Book Appointment
+    </h2>
+
+
+    <p class="popup-sub"
+       data-te="వివరాలు నమోదు చేసి Submit Form నొక్కండి. మీ వివరాలు Google Sheet లో save అవుతాయి."
+       data-en="Fill details and click Submit Form. Your details will be saved to Google Sheet.">
+    </p>
+
+
+    <!-- Name -->
+    <input type="text"
+           id="appt-name"
+           placeholder="మీ పేరు / Your Name"
+           required>
+
+
+    <!-- Phone -->
+    <input type="tel"
+           id="appt-phone"
+           placeholder="ఫోన్ నంబర్ / Phone Number"
+           maxlength="10"
+           required>
+
+
+    <!-- Problem -->
+    <select id="appt-problem" required>
+      <option value="">సమస్య ఎంచుకోండి / Select Problem</option>
+      <option value="Piles (అర్షమొలలు)">Piles – అర్షమొలలు</option>
+      <option value="Fissure (పగుళ్లు)">Fissure – పగుళ్లు</option>
+      <option value="Fistula (భగందరం)">Fistula – భగందరం</option>
+      <option value="Other">Other – ఇతరం</option>
+    </select>
+
+
+    <!-- Note -->
+    <textarea id="appt-note"
+              rows="3"
+              placeholder="అదనపు సమాచారం / Additional Note (optional)">
+    </textarea>
+
+
+    <!-- Submit -->
+    <button class="btn-submit-form"
+            id="btnSubmitForm"
+            onclick="submitForm()">
+      Submit Form
+    </button>
+
+
+    <div id="successMsg"></div>
+
+
+  </div>
+</div>
+
+
+<!-- DISEASE INFO SLIDE PANEL -->
+<div class="info-overlay" id="infoOverlay" onclick="closeInfoPanel()"></div>
+<div class="info-panel" id="infoPanel">
+  <div class="info-panel-head">
+    <h3 data-te="వ్యాధి సమాచారం – Piles, Fissure & Fistula" data-en="Disease Information – Piles, Fissure & Fistula"></h3>
+    <button class="info-close" onclick="closeInfoPanel()">×</button>
+  </div>
+  <div class="info-tabs">
+    <button class="itab active" onclick="switchTab(0)">🔴 Piles</button>
+    <button class="itab" onclick="switchTab(1)">🔥 Fissure</button>
+    <button class="itab" onclick="switchTab(2)">💧 Fistula</button>
+  </div>
+  <div class="info-content">
+    <!-- PILES INFO -->
+    <div class="idisease active" id="disease0">
+      <div class="idisease-svg">
+        <img src="piles.jpg" alt="Piles Anatomy" style="max-width:100%;max-height:130px;" onerror="this.style.display='none'">
+      </div>
+      <div class="idisease-title" data-te="అర్షమొలలు (Piles / Haemorrhoids)" data-en="Piles / Haemorrhoids"></div>
+      <div class="idisease-sub" data-te="మలద్వారం లోపల లేదా వెలుపల ఉన్న రక్తనాళాల వాపు. రక్తస్రావం, నొప్పి మరియు అసౌకర్యం కలిగిస్తాయి." data-en="Swollen veins inside or around the anal canal causing bleeding, pain, and discomfort. Affects 1 in 3 adults."></div>
+      <div class="info-section"><h4>🔎 <span data-te="లక్షణాలు" data-en="Symptoms"></span></h4>
+        <ul class="info-list">
+          <li data-te="మలవిసర్జన సమయంలో ఎర్రని రక్తస్రావం" data-en="Bright red bleeding during bowel movements"></li>
+          <li data-te="మలద్వారం దగ్గర వాపు, నొప్పి, మంట" data-en="Swelling, pain, burning near the anus"></li>
+          <li data-te="మలద్వారం బయటకు వచ్చే లంప్స్" data-en="Lumps or protrusions outside the anal opening"></li>
+          <li data-te="కూర్చున్నప్పుడు తీవ్రమైన అసౌకర్యం" data-en="Severe discomfort while sitting or walking"></li>
+          <li data-te="మలవిసర్జన తర్వాత పూర్తి శుభ్రంగా అనిపించకపోవడం" data-en="Feeling of incomplete bowel emptying"></li>
+        </ul>
+      </div>
+      <div class="info-section"><h4>⚠️ <span data-te="కారణాలు" data-en="Causes"></span></h4>
+        <div class="info-cause-grid">
+          <div class="cause-item"><span>🌶️</span><span data-te="మసాలా ఆహారం" data-en="Spicy food"></span></div>
+          <div class="cause-item"><span>💧</span><span data-te="నీళ్లు తక్కువగా తాగడం" data-en="Low water intake"></span></div>
+          <div class="cause-item"><span>🚽</span><span data-te="మలబద్ధకం" data-en="Chronic constipation"></span></div>
+          <div class="cause-item"><span>🏋️</span><span data-te="బరువులు మోయడం" data-en="Heavy lifting"></span></div>
+          <div class="cause-item"><span>🪑</span><span data-te="ఎక్కువ సేపు కూర్చోవడం" data-en="Prolonged sitting"></span></div>
+          <div class="cause-item"><span>🧬</span><span data-te="వంశపారంపర్యం" data-en="Hereditary factors"></span></div>
+        </div>
+      </div>
+      <div class="info-section"><h4>✅ <span data-te="మా చికిత్స" data-en="Our Treatment"></span></h4>
+        <ul class="info-list">
+          <li data-te="క్షరసూత్ర పద్ధతిలో ఆపరేషన్ లేకుండా నయం" data-en="Non-surgical cure via Ksharasutra method"></li>
+          <li data-te="3–6 వారాల్లో పూర్తిగా నయం" data-en="Complete cure within 3–6 weeks"></li>
+          <li data-te="అదే రోజు ఇంటికి వెళ్ళవచ్చు" data-en="Day procedure – go home same day"></li>
+          <li data-te="తిరిగి రాకుండా శాశ్వత నివారణ" data-en="Permanent cure with no recurrence"></li>
+        </ul>
+      </div>
+      <a href="https://wa.me/917981093680?text=నమస్కారం%2C Piles గురించి సమాచారం కావాలి" class="info-cta" target="_blank">💬 <span data-te="Piles గురించి WhatsApp లో అడగండి" data-en="Ask about Piles on WhatsApp"></span></a>
+    </div>
+
+
+    <!-- FISSURE INFO -->
+    <div class="idisease" id="disease1">
+      <div class="idisease-svg">
+        <img src="annlfissure.png" alt="Fissure Anatomy" style="max-width:100%;max-height:130px;" onerror="this.style.display='none'">
+      </div>
+      <div class="idisease-title" data-te="పగుళ్లు (Anal Fissure)" data-en="Anal Fissure"></div>
+      <div class="idisease-sub" data-te="మలద్వారం చర్మంలో చిన్న పగుళ్లు ఏర్పడటం. మలవిసర్జన సమయంలో తీవ్రమైన నొప్పి కలిగిస్తుంది." data-en="Small tears in the anal canal lining, causing sharp pain and bleeding. Often mistaken for piles."></div>
+      <div class="info-section"><h4>🔎 <span data-te="లక్షణాలు" data-en="Symptoms"></span></h4>
+        <ul class="info-list">
+          <li data-te="మలవిసర్జన సమయంలో కత్తితో కోసినట్టు నొప్పి" data-en="Sharp, knife-like pain during bowel movement"></li>
+          <li data-te="మలవిసర్జన తర్వాత 1–2 గంటల వరకు మంట" data-en="Burning pain lasting 1–2 hours after passing stool"></li>
+          <li data-te="ఎర్రని రక్తస్రావం – toilet paper లో కనిపించడం" data-en="Bright red blood on toilet paper or stool"></li>
+          <li data-te="మలవిసర్జనకు భయం పడటం" data-en="Fear of going to toilet, worsening constipation"></li>
+          <li data-te="మలద్వారం చుట్టూ skin tag ఏర్పడటం" data-en="Skin tag may develop near the tear"></li>
+        </ul>
+      </div>
+      <div class="info-section"><h4>⚠️ <span data-te="కారణాలు" data-en="Causes"></span></h4>
+        <div class="info-cause-grid">
+          <div class="cause-item"><span>💩</span><span data-te="గట్టి మలం" data-en="Hard, dry stools"></span></div>
+          <div class="cause-item"><span>😤</span><span data-te="బలవంతం చేయడం" data-en="Straining during bowel movement"></span></div>
+          <div class="cause-item"><span>🏃</span><span data-te="దీర్ఘకాలిక విరేచనాలు" data-en="Chronic diarrhoea"></span></div>
+          <div class="cause-item"><span>🤰</span><span data-te="ప్రసవం తర్వాత" data-en="Post childbirth trauma"></span></div>
+          <div class="cause-item"><span>🌶️</span><span data-te="మసాలా ఆహారం" data-en="Spicy / low fibre diet"></span></div>
+          <div class="cause-item"><span>💧</span><span data-te="నీళ్లు తక్కువగా" data-en="Dehydration"></span></div>
+        </div>
+      </div>
+      <div class="info-section"><h4>✅ <span data-te="మా చికిత్స" data-en="Our Treatment"></span></h4>
+        <ul class="info-list">
+          <li data-te="ఆయుర్వేదిక్ మూలికా ఔషధాలు" data-en="Ayurvedic herbal medicines to relax the sphincter"></li>
+          <li data-te="క్షరసూత్ర పద్ధతి – దీర్ఘకాలిక fissures కు" data-en="Ksharasutra procedure for chronic fissures"></li>
+          <li data-te="2–4 వారాల్లో పూర్తిగా నయం" data-en="Complete healing within 2–4 weeks"></li>
+          <li data-te="ఆహార మార్పులు & జీవనశైలి సూచనలు" data-en="Dietary and lifestyle guidance to prevent recurrence"></li>
+        </ul>
+      </div>
+      <a href="https://wa.me/917981093680?text=నమస్కారం%2C Fissure గురించి సమాచారం కావాలి" class="info-cta" target="_blank">💬 <span data-te="Fissure గురించి WhatsApp లో అడగండి" data-en="Ask about Fissure on WhatsApp"></span></a>
+    </div>
+
+
+    <!-- FISTULA INFO -->
+    <div class="idisease" id="disease2">
+      <div class="idisease-svg">
+        <img src="FISTULA.jpeg" alt="Fistula Anatomy" style="max-width:100%;max-height:130px;" onerror="this.style.display='none'">
+      </div>
+      <div class="idisease-title" data-te="ఫిస్టులా / భగందరం" data-en="Anal Fistula / Bhagandara"></div>
+      <div class="idisease-sub" data-te="మలద్వారం లోపలి భాగం నుండి చర్మం పైకి సొరంగం ఏర్పడటం. సాధారణంగా abscess నుండి ప్రారంభమవుతుంది." data-en="An abnormal tunnel from inside the anal canal to the skin surface. Usually starts as an abscess."></div>
+      <div class="info-section"><h4>🔎 <span data-te="లక్షణాలు" data-en="Symptoms"></span></h4>
+        <ul class="info-list">
+          <li data-te="ఆసనము ప్రక్కన 2–3 అంగుళాల దూరంలో గడ్డ పుట్టడం" data-en="Lump 2–3 inches from the anal opening"></li>
+          <li data-te="గడ్డ పగిలి రంధ్రముగా మారి చీము నిరంతరం కారడం" data-en="Pus discharge from a hole near the anus"></li>
+          <li data-te="కూర్చున్నప్పుడు, నడిచేటప్పుడు నిరంతర నొప్పి" data-en="Persistent pain while sitting or walking"></li>
+          <li data-te="దుర్వాసన స్రావం – బట్టలకు అంటడం" data-en="Foul-smelling discharge soiling clothes"></li>
+          <li data-te="మళ్ళీ మళ్ళీ వాపు వస్తూ ఉండటం" data-en="Recurring swellings that burst and refill"></li>
+        </ul>
+      </div>
+      <div class="info-section"><h4>⚠️ <span data-te="కారణాలు" data-en="Causes"></span></h4>
+        <div class="info-cause-grid">
+          <div class="cause-item"><span>🦠</span><span data-te="పాత abscess / గడ్డ" data-en="Untreated perianal abscess"></span></div>
+          <div class="cause-item"><span>🧫</span><span data-te="సంక్రమణ" data-en="Bacterial infection"></span></div>
+          <div class="cause-item"><span>🩺</span><span data-te="Crohn's disease" data-en="Crohn's / IBD"></span></div>
+          <div class="cause-item"><span>🚫</span><span data-te="సరిగా చికిత్స చేయకపోవడం" data-en="Inadequately treated abscess"></span></div>
+          <div class="cause-item"><span>🧬</span><span data-te="వంశపారంపర్యం" data-en="Genetic predisposition"></span></div>
+          <div class="cause-item"><span>💪</span><span data-te="రోగనిరోధక శక్తి తక్కువగా" data-en="Low immunity"></span></div>
+        </div>
+      </div>
+      <div class="info-section"><h4>✅ <span data-te="మా చికిత్స" data-en="Our Treatment"></span></h4>
+        <ul class="info-list">
+          <li data-te="క్షరసూత్ర పద్ధతి – Fistula కు అత్యుత్తమ చికిత్స" data-en="Ksharasutra – gold standard for fistula treatment"></li>
+          <li data-te="Fistula tract పూర్తిగా నాశనం చేయబడుతుంది" data-en="Entire fistula tract destroyed gradually and safely"></li>
+          <li data-te="మళ్ళీ రాకుండా శాశ్వత నివారణ" data-en="Permanent cure with no recurrence in most cases"></li>
+          <li data-te="4–8 వారాల్లో పూర్తి నయం" data-en="Complete healing in 4–8 weeks"></li>
+        </ul>
+      </div>
+      <a href="https://wa.me/917981093680?text=నమస్కారం%2C Fistula గురించి సమాచారం కావాలి" class="info-cta" target="_blank">💬 <span data-te="Fistula గురించి WhatsApp లో అడగండి" data-en="Ask about Fistula on WhatsApp"></span></a>
+    </div>
+  </div>
+</div>
+<!-- ============================================= -->
+<!-- APPOINTY WIDGET CONFIGURATION -->
+<!-- ============================================= -->
+<script type="text/javascript">
+  if (typeof(window.Appointy) === 'undefined') {
+    window.Appointy = {};
+  }
+  window.Appointy.config = {
+    business: 'Baji143',
+    defaultTab: 'Schedule',
+    extraParameter: '',
+    buttonImg: '',
+    modal: {
+      height: '100%',
+      width: '100%'
+    },
+    buttonAlign: "Right",
+    buttonPosition: "40",
+  };
+</script>
+
+
+<!-- Appointy widget script (injects hidden #app-widget-btn) -->
+<script type="text/javascript" src="https://cdn.appointy.com/web/blob-web/js/appointy-widget.js"></script>
+
+
+<!-- ============================================= -->
+<!-- BOOK APPOINTMENT FUNCTION -->
+<!-- ============================================= -->
+<script>
+function openAppointment() {
+  var widgetBtn = document.getElementById('app-widget-btn');
+  if (widgetBtn) {
+    widgetBtn.click();
+  } else {
+    console.warn('Appointy widget not loaded yet. Please wait a moment and try again.');
+  }
+}
+</script>
+
+
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzuOOTuufFBZdInd6Ke228tDznMNkeAX_jErcGQnVlDnUwsLxR4KqIGBJEU6deogoOV/exec";
+
+
+let currentLang = 'te';
+
+
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById('btnTe').classList.toggle('active', lang === 'te');
+  document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+  document.querySelectorAll('[data-te]').forEach(el => {
+    const val = lang === 'te' ? el.getAttribute('data-te') : el.getAttribute('data-en');
+    if (val !== null) {
+      if (val.includes('<') || val.includes('&')) el.innerHTML = val;
+      else el.textContent = val;
+    }
+  });
+  document.documentElement.lang = lang === 'te' ? 'te' : 'en';
+  document.getElementById('langInfo').textContent = lang === 'te'
+    ? '🌐 English కు మార్చడానికి → English నొక్కండి'
+    : '🌐 తెలుగు లో చదవడానికి → తెలుగు నొక్కండి';
+}
+setLang('te');
+
+
+window.addEventListener('scroll', () => {
+  document.getElementById('scrollBtn').classList.toggle('visible', window.scrollY > 300);
+});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if(href === '#') return;
+    e.preventDefault();
+    const t = document.querySelector(href);
+    if (t) t.scrollIntoView({behavior:'smooth'});
+  });
+});
+
+
+function getFormData() {
+  return {
+    name:    document.getElementById('appt-name').value.trim(),
+    phone:   document.getElementById('appt-phone').value.trim(),
+    problem: document.getElementById('appt-problem').value,
+    note:    document.getElementById('appt-note').value.trim()
+  };
+}
+function validate(d) {
+  if (!d.name)  { showMsg(currentLang==='te' ? '⚠️ దయచేసి మీ పేరు నమోదు చేయండి' : '⚠️ Please enter your name', 'err'); return false; }
+  if (!d.phone) { showMsg(currentLang==='te' ? '⚠️ దయచేసి ఫోన్ నంబర్ నమోదు చేయండి' : '⚠️ Please enter your phone number', 'err'); return false; }
+  return true;
+}
+function showMsg(text, cls) {
+  const el = document.getElementById('successMsg');
+  el.textContent = text;
+  el.className = cls;
+}
+function clearForm() {
+  ['appt-name','appt-phone','appt-note'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('appt-problem').value = '';
+}
+
+
+function openAppointments() {
+  document.getElementById('appointmentPopup').style.display = 'flex';
+  document.getElementById('successMsg').textContent = '';
+  document.getElementById('successMsg').className = '';
+}
+function closeAppointment() {
+  document.getElementById('appointmentPopup').style.display = 'none';
+}
+
+
+function submitForm() {
+
+
+  console.log("🔵 Submit button clicked");
+
+
+  const d = getFormData();
+  console.log("📦 Form Data:", d);
+
+
+  if (!validate(d)) {
+    console.warn("⚠️ Validation failed");
+    return;
+  }
+
+
+  console.log("✅ Validation passed");
+
+
+  const btn = document.getElementById('btnSubmitForm');
+
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>&nbsp;<span>Saving...</span>';
+
+
+  const payload = {
+    name: d.name,
+    phone: d.phone,
+    problem: d.problem || 'Not specified',
+    note: d.note || '',
+    timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
+  };
+
+
+  console.log("📤 Payload sending to Google Script:", payload);
+  console.log("🌐 Script URL:", SCRIPT_URL);
+
+
+  fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(() => {
+
+
+    console.log("✅ Data sent to Google Script successfully");
+
+
+    console.log("📲 Sending WhatsApp notification...");
+    sendWhatsAppNotification(d);
+
+
+    btn.disabled = false;
+    btn.innerHTML = '📋 Submit Form';
+
+
+    console.log("🧹 Clearing form fields");
+    clearForm();
+
+
+    console.log("💬 Showing success message");
+
+
+    showMsg(
+      currentLang === 'te'
+        ? '✅ ఫారమ్ సేవ్ అయింది! WhatsApp లో నిర్ధారణ పంపబడింది.'
+        : '✅ Form saved successfully! Confirmation sent via WhatsApp.',
+      'ok'
+    );
+
+
+    console.log("⏳ Popup will close in 3 seconds");
+
+
+    setTimeout(() => {
+      console.log("❌ Closing appointment popup");
+      closeAppointment();
+    }, 3000);
+
+
+  })
+  .catch((err) => {
+
+
+    console.error("❌ Error sending data:", err);
+
+
+    btn.disabled = false;
+    btn.innerHTML = '📋 Submit Form';
+
+
+    showMsg(
+      currentLang === 'te'
+        ? '❌ సేవ్ చేయడంలో లోపం. దయచేసి మళ్ళీ ప్రయత్నించండి.'
+        : '❌ Error saving form. Please try again.',
+      'err'
+    );
+
+
+  });
+
+
+}
+function sendWhatsAppNotification(data) {
+  const clinicPhone = "917981093680";
+  let problemText = data.problem || 'Not specified';
+  const clinicMessage = `🔔 *New Appointment Request* 🔔\n\n👤 *Name:* ${data.name}\n📞 *Phone:* ${data.phone}\n🏥 *Problem:* ${problemText}\n📝 *Note:* ${data.note || 'No additional notes'}\n⏰ *Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
+  window.open(`https://wa.me/${clinicPhone}?text=${encodeURIComponent(clinicMessage)}`, '_blank');
+  setTimeout(() => {
+    if (confirm(currentLang === 'te' ? 'మీకు WhatsApp లో కన్ఫర్మేషన్ పంపాలా?' : 'Do you want to receive confirmation on WhatsApp?')) {
+      const patientMessage = `🙏 *Thank you for booking appointment with Sai Piles Clinic* 🙏\n\nHi ${data.name.split(' ')[0]},\n\nWe received your request for *${problemText}*. Our doctor will contact you at ${data.phone}.\n\n📍 Sagar Road, Kondamallepally, Nalgonda-508243\n⏰ 9AM - 9PM (Mon-Sun)\n📞 7981093680`;
+      window.open(`https://wa.me/${data.phone}?text=${encodeURIComponent(patientMessage)}`, '_blank');
+    }
+  }, 1000);
+}
+
+
+function openInfoPanel(tabIdx) {
+  document.getElementById('infoOverlay').style.display = 'block';
+  const p = document.getElementById('infoPanel');
+  p.style.display = 'block';
+  setTimeout(() => p.classList.add('open'), 10);
+  if (tabIdx !== undefined) switchTab(tabIdx);
+}
+function closeInfoPanel() {
+  const p = document.getElementById('infoPanel');
+  p.classList.remove('open');
+  setTimeout(() => {
+    p.style.display = 'none';
+    document.getElementById('infoOverlay').style.display = 'none';
+  }, 350);
+}
+function switchTab(idx) {
+  document.querySelectorAll('.itab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  document.querySelectorAll('.idisease').forEach((d,i) => d.classList.toggle('active', i===idx));
+}
+</script>
+</body>
+</html>
+
